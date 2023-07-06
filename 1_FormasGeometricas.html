@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ex. 1</title>
+</head>
+<body>
+<canvas id="exemplo" width="400" height="400" style="border:solid 1px #000000;">
+    Please use a browser that supports "canvas"
+</canvas>
+<script language="javascript" type="text/javascript">
+<!--
+function iniciar(){
+    canvas = document.getElementById("exemplo");
+    if(!canvas){alert("ERRO! Não consegui obter o canvas.");return false;}            
+    ctx = canvas.getContext("2d");            
+    
+    ctx.fillStyle = "rgba(0, 0, 255, 1.0)"; 
+    ctx.fillRect(120, 10, 150, 150);		
+    //Quadrado azul
+
+    ctx.clearRect(130, 20, 110, 110);		
+    // Quadrado branco que tapa o azul
+
+    ctx.strokeStyle = "rgba(255, 0, 0, 1.0)";		
+    // Cor das duas linhas vermelhas
+
+    ctx.strokeRect(10, 350, 300, 30);
+    //Retângulo a baixo
+
+    ctx.moveTo(0, 0); ctx.lineTo(400, 400); ctx.stroke();	
+    // Orientaçao da linha da esquerda para a direita	
+    
+    ctx.moveTo(400, 200); ctx.lineTo(200, 400); ctx.stroke();
+    // Orientaçao da linha da esquerda para a direira
+
+    ctx.strokeStyle = "rgba(255, 0, 0, 1.0)";
+    // Cor do circulo mais abaixo         	
+
+    ctx.beginPath();    	
+	//Center x, center y, raio, starting angle,  ending angle (radianos, 0 é às 3:00)
+    
+    ctx.arc(200, 300, 70, 0, 2*Math.PI); ctx.stroke(); 
+    // Orientaçao do círculo mais a baixo
+    
+    
+	ctx.strokeStyle = "rgba(255, 0, 0, 1.0)";		
+    // Cor da borda do círculo verde
+
+    
+    ctx.fillStyle = "rgba(0, 255, 0, 1.0)";	
+    // Cor da parte de dentro verde
+
+	ctx.beginPath(); ctx.arc(100, 100, 70, 0, 1.5*Math.PI);
+    // Orientaçao do circulo verde
+
+    ctx.fill(); ctx.stroke();
+
+	ctx.fillStyle = "rgba(0, 0, 0, 1.0)"; ctx.font = "30px Arial";		
+    ctx.fillText("Olá Mundo!", 150, 50);
+    // Este é o "Olá mundo!"
+
+    ctx.strokeStyle = "rgba(0, 0, 0, 1.0)";			
+    ctx.strokeText("Hello World!", 210, 100);		
+    // Este é o Hello world!
+
+    ctx.strokeStyle = "rgba(255, 0, 0, 1.0)"; 	
+    ctx.fillStyle = "rgba(255, 255, 0, 1.0)";    
+    ctx.fillText("Hello World!", 220, 150);	
+    ctx.strokeText("Hello World!",220, 150); 
+
+    // Este é o Hello world! com o stroke  como parte de fora e o fillstyle
+    //   como parte de dentro.
+    // O fillText e o strokeText sao as orientaçoes
+
+}        
+iniciar();        
+-->
+</script>
+</body>
+</html>
